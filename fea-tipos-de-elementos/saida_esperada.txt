@@ -1,0 +1,22 @@
+# locking.py
+Referência (Timoshenko): 4.0312
+
+Shear locking - estado plano de tensão, nu = 0,3, L/h = 10
+   malha      Q4     QM6      Q8   (flecha / referência)
+   5x1     0.379   0.989   0.981
+  10x1     0.674   0.996   0.991
+  10x2     0.706   0.991   0.995
+  20x2     0.888   0.995   0.997
+  40x4     0.968   0.997   0.998
+
+Volumetric locking - estado plano de deformação, malha 20x4
+     nu      Q4     Q4S      Q8
+ 0.3000   0.900   0.942   0.994
+ 0.4500   0.801   0.951   0.977
+ 0.4900   0.503   0.950   0.961
+ 0.4990   0.106   0.949   0.953
+ 0.4999   0.021   0.949   0.952
+
+# convergencia.py
+Q4: f(10x1)=2.7156 f(20x2)=3.5811 f(40x4)=3.9009 | p=1.44 | extrapolado=4.0883 (1.014 da ref.) | GCI=6.00%
+Q8: f(10x1)=3.9930 f(20x2)=4.0175 f(40x4)=4.0221 | p=2.42 | extrapolado=4.0231 (0.998 da ref.) | GCI=0.03%
